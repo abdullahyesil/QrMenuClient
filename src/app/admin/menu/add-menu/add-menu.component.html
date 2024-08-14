@@ -1,0 +1,23 @@
+
+<h2 mat-dialog-title>Install Angular</h2>
+<mat-dialog-content class="mat-typography">
+<form [formGroup]="menuForm" (ngSubmit)="onSubmit()">
+    <label for="name">Menu Name:</label>
+    <input id="name" formControlName="name" type="text" placeholder="Enter menu name" />
+  
+    <label for="description">Description:</label>
+    <textarea id="description" formControlName="description" placeholder="Enter description"></textarea>
+  
+    <label for="qrCodeUrl">QR Code URL:</label>
+    <input id="qrCodeUrl" formControlName="qrCodeUrl" type="text" placeholder="Enter QR code URL" />
+  
+    <label for="link">Link:</label>
+    <input id="link" formControlName="link" type="text" placeholder="Enter link" />
+  
+    <button type="submit" [disabled]="menuForm.invalid">Create Menu</button>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>

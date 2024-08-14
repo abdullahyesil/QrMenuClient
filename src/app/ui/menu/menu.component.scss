@@ -1,0 +1,66 @@
+.menu-list {
+    padding: 1rem;
+    background-color: #f9f9f9; /* Hafif gri arka plan rengi */
+  }
+  
+  .menu {
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .menu-title {
+    font-size: 1.5rem;
+    color: #333333; /* Koyu gri başlık rengi */
+    margin-bottom: 1rem;
+  }
+  
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    background-color: #fefefe; /* Ürün arka planı */
+    border: 1px solid #ddd; /* Hafif kenar çizgisi */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444444; /* Koyu gri ürün adı rengi */
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-description {
+    font-size: 0.9rem;
+    color: #666666; /* Açık gri ürün açıklaması rengi */
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-price {
+    font-size: 1.1rem;
+    color: #800000; /* Koyu kırmızı fiyat rengi */
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,20 @@
+<div class="menu-list">
+  test
+  <div *ngIf="menuModel" class="menu">
+    <h2 class="menu-title">{{ menuModel.name }}</h2>
+    <div class="items">
+      <div *ngFor="let item of itemsModel" class="item">
+        <img [src]="item.imageUrl" alt="{{ item.name }}" class="item-image" />
+        <div class="item-details">
+          <h3 class="item-name">{{ item.name }}</h3>
+          <p class="item-description">{{ item.description }}</p>
+          <p class="item-price">{{ item.price | currency }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="navbar"></div>
+<div id="body"></div>
+<div id="footer"></div>

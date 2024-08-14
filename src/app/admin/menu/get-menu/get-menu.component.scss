@@ -1,0 +1,23 @@
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .menu-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .menu-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
