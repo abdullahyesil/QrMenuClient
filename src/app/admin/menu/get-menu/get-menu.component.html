@@ -8,6 +8,8 @@
       <h1 class="menu-title">{{ item.menu.name }}</h1>
       <button *ngIf="!item.showItems" class="btn-primary btn" (click)="toggleItems(item.menu.id)">İtemleri Göster</button>
         <button *ngIf="item.showItems" class="btn-danger btn" (click)="toggleItems(item.menu.id)">İtemleri Gizle</button>
+        <button (click)="openItemDialog(item.menu.id)" class="btn btn-success m-1">İtem Ekle</button>
+          <button (click)="openaddCategoryDialog(item.menu.id)" class="btn btn-success m-1">Kategori Ekle</button>
         <button routerLink="/menu/{{item.menu.id}}" class="btn btn-success m-1">Menüye git</button>
     </div>
     {{item.showItems}}

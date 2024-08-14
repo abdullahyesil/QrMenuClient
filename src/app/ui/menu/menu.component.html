@@ -1,20 +1,23 @@
 <div class="menu-list">
-  test
   <div *ngIf="menuModel" class="menu">
     <h2 class="menu-title">{{ menuModel.name }}</h2>
-    <div class="items">
-      <div *ngFor="let item of itemsModel" class="item">
-        <img [src]="item.imageUrl" alt="{{ item.name }}" class="item-image" />
-        <div class="item-details">
-          <h3 class="item-name">{{ item.name }}</h3>
-          <p class="item-description">{{ item.description }}</p>
-          <p class="item-price">{{ item.price | currency }}</p>
+    <div *ngFor="let categoryId of getCategoryIds()" class="category">
+      <h3 class="category-title">{{ getCategoryName(categoryId) }}</h3>
+      <div class="items">
+        <div *ngFor="let item of categorizedItems[categoryId]" class="item">
+          <img [src]="item.imageUrl" alt="{{ item.name }}" class="item-image" />
+          <div class="item-details">
+            <h4 class="item-name">{{ item.name }}</h4>
+            <p class="item-description">{{ item.description }}</p>
+            <p class="item-price">{{ item.price | currency: '₺' }}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Other HTML sections -->
 <div id="navbar"></div>
 <div id="body"></div>
 <div id="footer"></div>

@@ -20,9 +20,8 @@ export class MenuService {
    addMenu(model:MenuItem):Observable<ResponseModel>{
     return this.httpClient.post<ResponseModel>(this.url, model)
    }
-   getById(menuId:string){
-
-    return this.httpClient.get<any>(this.url+menuId)
+   getById(Id:string){
+    return this.httpClient.get<any>(this.url+Id)
    }
    
 }

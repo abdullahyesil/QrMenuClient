@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>Add Item Angular</h2>
+<mat-dialog-content class="mat-typography">
+    <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="menuId">Menu ID</label>
+          <input *ngIf="this.data" value="{{this.data}}" id="menuId" formControlName="menuId" type="text">
+          <div *ngIf="categoryForm.get('menuId')?.invalid && categoryForm.get('menuId')?.touched">
+            Menu ID is required
+          </div>
+        </div>
+      
+        <div>
+          <label for="name">Name</label>
+          <input id="name" formControlName="name" type="text">
+          <div *ngIf="categoryForm.get('name')?.invalid && categoryForm.get('name')?.touched">
+            Name is required
+          </div>
+        </div>
+      
+        <button type="submit" [disabled]="categoryForm.invalid">Submit</button>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>

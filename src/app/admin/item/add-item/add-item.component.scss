@@ -1,0 +1,56 @@
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #800000; /* Koyu kırmızı başlık rengi */
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #333333; /* Koyu gri etiket rengi */
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd; /* Hafif kenar çizgisi */
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical; /* Yalnızca dikeyde yeniden boyutlandırma */
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #800000; /* Koyu kırmızı buton arka planı */
+    color: #ffffff; /* Beyaz metin rengi */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+  }
+  
+  button:hover {
+    background-color: #b22222; /* Hover efekti için açık kırmızı */
+  }
+  

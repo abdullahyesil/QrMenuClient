@@ -10,9 +10,10 @@ import { GetMenuComponent } from './menu/get-menu/get-menu.component';
 import { GetItemsComponent } from './item/get-items/get-items.component';
 import { AddItemComponent } from './item/add-item/add-item.component';
 import { UpdateItemComponent } from './item/update-item/update-item.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import { AddCategoryComponent } from './category/add-category/add-category.component';
 
 
 @NgModule({
@@ -24,14 +25,16 @@ import {MatButtonModule} from '@angular/material/button';
     GetMenuComponent,
     GetItemsComponent,
     AddItemComponent,
-    UpdateItemComponent
+    UpdateItemComponent,
+    AddCategoryComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     ReactiveFormsModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ]
 })
 export class AdminModule { }
